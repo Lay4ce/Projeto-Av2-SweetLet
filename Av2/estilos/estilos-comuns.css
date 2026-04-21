@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cabecalho{
+    height: 100px;
+    background-color: #FFD280;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-page{
+    width: 300px;
+    height: 40px;
+    background-color: black;
+}
+
+.menu-lateral{
+    width: 120px;
+    background-color: #7DB6CF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 15px;
+}
+
+.menu-item {
+    width: 80px;
+    height: 20px;
+    background-color: #FF2FD2;
+    border-radius: 20px;
+}
+
+
+.conteudo-main {
+    flex: 1;
+    background-color: #E8D3A5;
+    padding: 30px;
+}
+
+
+
+.rodape {
+    height: 80px;
+    background-color: #A47800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
