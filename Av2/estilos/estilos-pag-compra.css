@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+.imaproduto{
+padding-bottom: 4vh;
+padding-top: 4vh;
+text-align: center;
+
+}
