@@ -4,52 +4,76 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+    grid-template-areas:
+        "cabecalho cabecalho"
+        "menu-lateral conteudo-main"
+        "rodape rodape";
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 100px 1fr 80px;
+    min-height: 100vh;
+    background-color: #f0e0c0;
+}
 
-.cabecalho{
+.cabecalho {
+    grid-area: cabecalho;
     height: 100px;
     background-color: #FFD280;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 160px;
 }
 
-.logo-page{
+.logo-page {
+    grid-area: cabecalho;
     width: 300px;
     height: 40px;
     background-color: black;
+    justify-content:center;
 }
 
-.menu-lateral{
+.menu-lateral {
+    grid-area: menu-lateral;
     width: 120px;
     background-color: #7DB6CF;
     display: flex;
+    margin-left: 15%;
+    border-radius: 25px;
     flex-direction: column;
-    align-items: center;
     padding-top: 20px;
-    gap: 15px;
+    gap: 5px;
+    text-align: center;
 }
 
 .menu-item {
-    width: 80px;
-    height: 20px;
+    width: 100px;
+    height: 30px;
     background-color: #FF2FD2;
-    border-radius: 20px;
+    border-radius:0px 15px 15px 0px;
+    margin-top: 10px;
 }
 
+.menu-item a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .conteudo-main {
+    grid-area: conteudo-main;
     flex: 1;
-    background-color: #E8D3A5;
+    background-color: #f0e0c0;
     padding: 30px;
 }
 
-
-
 .rodape {
-    height: 80px;
+    grid-area: rodape;
+    height: 120px;
     background-color: #A47800;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 160px;
     gap: 40px;
 }
