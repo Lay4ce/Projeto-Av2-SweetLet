@@ -1,22 +1,25 @@
-/* ===== PROPAGANDA / BANNER PRINCIPAL ===== */
+
+
 .propaganda-conteudo-principal {
-    width: 70%;
+    width: 100%;
     height: 180px;
     background-color: #ccc;
     margin-bottom: 30px;
-    align-items: center;
 }
+ 
 
-/* ===== CONTAINER DE PRODUTOS ===== */
-.produto-container {
+.produtos-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    margin-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
 }
+ 
 
 .produto-container {
-    flex: 1;
-    height: 180px;
+    width: 300px;
+    height: 300px;
     background-color: #ccc;
+    flex-shrink: 0;
 }

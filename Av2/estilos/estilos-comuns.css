@@ -13,6 +13,7 @@ body {
     grid-template-columns: 120px 1fr;
     grid-template-rows: 100px 1fr 80px;
     min-height: 100vh;
+    background-color: #f0e0c0;
 }
 
 .cabecalho {
@@ -41,19 +42,22 @@ body {
     margin-left: 15%;
     border-radius: 25px;
     flex-direction: column;
-    
     padding-top: 20px;
-    gap: 15px;
+    gap: 5px;
     text-align: center;
-
 }
 
 .menu-item {
-    width: 80px;
-    height: 20px;
+    width: 100px;
+    height: 30px;
     background-color: #FF2FD2;
-    border-radius:0px 20px 20px 0px;
-    margin-left: 0;
+    border-radius:0px 15px 15px 0px;
+    margin-top: 10px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .conteudo-main {
