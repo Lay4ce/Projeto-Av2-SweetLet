@@ -2,26 +2,47 @@
     box-sizing: border-box;
     margin: 0;
   }
+.conteudo-main {
+    display: grid;
+    grid-template-areas:
+        "imagem    imagem"
+        "nome       nome"
+        "descricao  compra"
+        "modelos    compra"
+        "modelos  detalhes";
+    grid-template-columns: 1.5fr 0.5fr;
+}
+
+.imaproduto                              { grid-area: imagem; }
+.conteudo-main > h1.nomeproduto            { grid-area: nome; }
+.descricaoproduto                        { grid-area: descricao;}
+.detalhesproduto                         { grid-area: detalhes; }
+.compra                                  { grid-area: compra; }
+.modeloscremcoton                        { grid-area: modelos; }
+.divisoria                               { grid-area: div1; }
+
 .botaocompra a{
     display: block;
-    width: fit-content;
-    height: auto;
-    padding: 4vh;
-    background-color: rgb(196, 0, 65);
+    width:100%;
+    height: fit-content;
+    padding: 5vh;
+    background-color: #ff3d98a1;
     border-style: none;
-    border-radius: 20%;
+    border-radius: 6%;
     text-decoration: none;
      color:black;
      font-size: 25px;
-     margin:0 auto;
+     margin:13px auto;
 }
+
+
 .imaproduto{
 padding-bottom: 4vh;
 padding-top: 4vh;
 text-align: center;
 
 }
-.nomedescricaoproduto{
+.descricaoproduto{
     padding-bottom: 4vh;
 padding-top: 4vh;
 }
@@ -36,33 +57,82 @@ padding: 4vh;
     text-align: justify;
      color: rgb(0, 61, 117);
 }
+ .modeloscremcoton h1{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+ padding: 2vh;
+ margin: 2% auto;
+ }
+
 h2, ul li{
 font-weight: normal;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
  font-size: 20px;
  padding: 2vh;
+
 }
 .compra{
     display:flex;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 61, 117);
     border-radius: 20px;
     position: relative;
-    align-items: center;
     justify-content: center;
     margin: 1vh;
+    padding: 2vw;
+        color: rgb(0, 61, 117);
+            flex-direction: column;
+
 }
 .compra h2{
     padding: 1vh;
 }
 .endereco, .botaocompra{
-flex: 1;    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 3%;
 }
-
-.caixaseuendereco{
+.caixaseuendereco, .caixaquantidade{
     display: block;
-    border-style: solid;
-    border-color: black;
+    border: 1px solid rgb(0, 61, 117);
     border-radius: 5%;
     text-align: center;
     margin: 1.5vh;
+}
+.caixaquantidade{
+    width: fit-content;
+    height: auto;
+    font-size: 25px;
+    margin-bottom: 5%;
+    padding: 0.5vw;
+    margin: 5px auto;
+}
+.caixaseuendereco{
+    margin: 2vw;
+}
+p{
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+.divisoria{
+    display: block;
+    width: 100%;
+text-align: center;
+margin-bottom: 4% auto;
+color:rgb(0, 61, 117);
+}
+.morango{
+    color: #d62274;
+}
+.pesego{
+    color:#ff6a70 ;
+}
+
+.blueberry{
+    color:#6ba3d1 ;
+}
+
+.limao{
+    color: #80b450;
 }
