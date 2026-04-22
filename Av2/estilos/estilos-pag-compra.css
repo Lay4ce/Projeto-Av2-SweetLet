@@ -19,7 +19,6 @@
 .detalhesproduto                         { grid-area: detalhes; }
 .compra                                  { grid-area: compra; }
 .modeloscremcoton                        { grid-area: modelos; }
-.divisoria                               { grid-area: div1; }
 
 .botaocompra a{
     display: block;
@@ -42,6 +41,10 @@ padding-top: 4vh;
 text-align: center;
 
 }
+img{
+    height: 100%;
+    width: 80%;
+}
 .descricaoproduto{
     padding-bottom: 4vh;
 padding-top: 4vh;
@@ -51,7 +54,7 @@ h1{
  font-size: 25px;
 }
 h1.nomeproduto{
-display: flexbox;
+display: flex;
 padding: 4vh;
     font-size: 33px;
     text-align: justify;
@@ -71,10 +74,11 @@ font-weight: normal;
 
 }
 .compra{
+    height: fit-content;
+    width: 100%;
     display:flex;
     border: 1px solid rgb(0, 61, 117);
     border-radius: 20px;
-    position: relative;
     justify-content: center;
     margin: 1vh;
     padding: 2vw;
@@ -100,15 +104,19 @@ font-weight: normal;
     margin: 1.5vh;
 }
 .caixaquantidade{
-    width: fit-content;
-    height: auto;
+    max-width: 6vw;
+    max-height: 7vh;
     font-size: 25px;
-    margin-bottom: 5%;
     padding: 0.5vw;
     margin: 5px auto;
+    overflow-y: hidden;
 }
 .caixaseuendereco{
     margin: 2vw;
+        max-width: 12vw;
+    max-height: 3vh;
+    overflow-y: hidden ;
+
 }
 p{
     text-decoration: line-through;
@@ -116,10 +124,9 @@ p{
 }
 
 .divisoria{
-    display: block;
     width: 100%;
 text-align: center;
-margin-bottom: 4% auto;
+margin-bottom: auto;
 color:rgb(0, 61, 117);
 }
 .morango{
