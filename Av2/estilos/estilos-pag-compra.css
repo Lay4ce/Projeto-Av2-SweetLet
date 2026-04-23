@@ -12,14 +12,15 @@
         "modelos  detalhes";
     grid-template-columns: 2fr 1fr;
     column-gap: 3vw;
+    padding-bottom: 10%;
 }
 
 .imaproduto                              { grid-area: imagem; }
 .conteudo-main > h1.nomeproduto          { grid-area: nome; }
 .descricaoproduto                        { grid-area: descricao;}
-.detalhesproduto                         { grid-area: detalhes; }
-.compra                                  { grid-area: compra; }
-.modeloscremcoton                        { grid-area: modelos; }
+.detalhesproduto                         { grid-area: detalhes;}
+.compra                                  { grid-area: compra; ;}
+.modelos                                 { grid-area: modelos; }
 
 .botaocompra a{
     display: block;
@@ -54,16 +55,16 @@ padding-top: 4vh;
 }
 h1{
  font-family: Arial, Helvetica, sans-serif;
-font-size: clamp(20px, 2.7vw, 25px);
+font-size: clamp(20px, 2.5vw, 35px);
 }
 h1.nomeproduto{
 display: flex;
 padding: 4vh;
-font-size: clamp(23px, 3.5vw, 33px);
+font-size: clamp(23px, 3.3vw, 36px);
     text-align: justify;
      color: rgb(0, 61, 117);
 }
- .modeloscremcoton h1{
+ .modelos h1{
         font-family:Verdana, Geneva, Tahoma, sans-serif;
  padding: 2vh;
  margin: 2% auto;
@@ -72,7 +73,7 @@ font-size: clamp(23px, 3.5vw, 33px);
 h2, ul li{
 font-weight: normal;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-font-size: clamp(17px, 2.5vw, 20px);
+font-size: clamp(17px, 2.2vw, 25px);
  padding: 2vh;
 
 }
@@ -86,6 +87,7 @@ font-size: clamp(17px, 2.5vw, 20px);
     padding: 2vw;
         color: rgb(0, 61, 117);
             flex-direction: column;
+            align-items:center 
 
 }
 .compra h2{
@@ -123,7 +125,7 @@ font-size: clamp(17px, 2.5vw, 20px);
 }
 p{
     text-decoration: line-through;
-font-size: clamp(17px, 2.5vw, 20px);
+font-size: clamp(17px, 2.4vw, 23px);
 }
 
 .divisoria{
@@ -145,6 +147,15 @@ color:rgb(0, 61, 117);
 
 .limao{
     color: #80b450;
+}
+.caramelo{
+    color: #f8a868;
+}
+.macaamor{
+    color: #7db988;
+}
+.balalimao{
+    color: #a9b019;
 }
 .rodape-texto, .rodape-creditos{
     text-decoration: none !important;
