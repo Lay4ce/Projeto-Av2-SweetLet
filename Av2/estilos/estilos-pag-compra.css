@@ -10,7 +10,7 @@
         "descricao  compra"
         "modelos    compra"
         "modelos  detalhes";
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 0.5fr;
     column-gap: 3vw;
     padding-bottom: 10%;
 }
@@ -43,7 +43,7 @@ padding-top: 4vh;
 text-align: center;
 
 }
-img{
+img.imagem{
     height: 100%;
     width: 80%;
     min-height: 170px;
@@ -184,8 +184,6 @@ color:rgb(0, 61, 117);
 .botaocompra{
     line-height: 200%;
 }
-
-
 
 
 }
