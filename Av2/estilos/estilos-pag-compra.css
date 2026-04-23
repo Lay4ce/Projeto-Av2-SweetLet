@@ -10,7 +10,8 @@
         "descricao  compra"
         "modelos    compra"
         "modelos  detalhes";
-    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 3vw;
 }
 
 .imaproduto                              { grid-area: imagem; }
@@ -80,7 +81,6 @@ font-weight: normal;
     border: 1px solid rgb(0, 61, 117);
     border-radius: 20px;
     justify-content: center;
-    margin: 1vh;
     padding: 2vw;
         color: rgb(0, 61, 117);
             flex-direction: column;
