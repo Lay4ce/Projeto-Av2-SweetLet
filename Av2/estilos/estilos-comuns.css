@@ -46,7 +46,7 @@ body {
     grid-area: menu-lateral;
     width: 100px;               /* largura do menu após o margin-left de 15% (120px - ~20px) */
     min-width: 100px;
-    background-color: #7DB6CF;
+    background-color: #7fd9ff;
     margin-left: 15%;
     border-radius: 20px;
     display: flex;
@@ -109,4 +109,32 @@ body {
  
 .rodape-creditos a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 900px){
+
+body {
+    display: grid;
+    grid-template-areas:
+        "cabecalho "
+        "menu-lateral"
+        "conteudo-main"
+        "rodape";
+    grid-template-columns:1fr;
+    grid-template-rows: auto auto 1fr auto;}
+
+.menu-lateral {
+    grid-area: menu-lateral;
+    width: 100%;              
+    min-width: 100px;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+        padding:20px;
+
+}
+.menu-item {
+    border-radius:15px;
+    margin:0 auto;
+}
 }
