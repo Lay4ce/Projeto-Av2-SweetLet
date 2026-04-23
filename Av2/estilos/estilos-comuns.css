@@ -11,7 +11,7 @@ body {
         "cabecalho cabecalho"
         "menu-lateral conteudo-main"
         "rodape rodape";
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 140px 1fr;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     background-color: #f0e0c0;
@@ -26,15 +26,26 @@ body {
     align-items: center;
 }
 
-.logo-page {
+.containner-logo-pagina{
     width: 300px;
-    height: 40px;
-    background-color: black;
+    height: 100px;
+    background-color: none;
+    padding: 0;
+}
+
+.logo-da-pagina{
+    width: 200px;
+    height: 90px;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+
 }
 
 .menu-lateral {
     grid-area: menu-lateral;
-    width: 120px;
+    width: 100px;               /* largura do menu após o margin-left de 15% (120px - ~20px) */
+    min-width: 100px;
     background-color: #7DB6CF;
     margin-left: 15%;
     border-radius: 20px;
@@ -44,6 +55,7 @@ body {
     padding-top: 20px;
     gap: 5px;
     text-align: center;
+    overflow: hidden;           /* garante que o fundo respeite o border-radius */
 }
 
 .menu-item {
@@ -52,7 +64,7 @@ body {
     background-color: #FF2FD2;
     border-radius: 0px 15px 15px 0px;
     margin-top: 10px;
-    display: flex;              /* permite centralizar o texto dentro */
+    display: flex;              
     align-items: center;
     justify-content: center;
 }
