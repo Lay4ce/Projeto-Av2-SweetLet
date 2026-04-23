@@ -1,13 +1,19 @@
-
-
 .propaganda-conteudo-principal {
     width: 100%;
     height: 180px;
     background-color: #ccc;
     margin-bottom: 30px;
+    display: flex;              /* centraliza a imagem dentro do container */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;           /* impede a imagem de vazar */
 }
- 
 
+.img-propaganda {
+    max-width: 100%;            /* nunca ultrapassa a largura do container */
+    max-height: 100%;           /* nunca ultrapassa a altura do container */
+    object-fit: contain;        /* mostra a imagem inteira sem cortar */
+}
 .produtos-wrapper {
     display: flex;
     flex-direction: row;
@@ -15,11 +21,20 @@
     flex-wrap: wrap;
     gap: 100px;
 }
- 
 
 .produto-container {
     width: 300px;
     height: 300px;
     background-color: #ccc;
     flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.produto-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* preenche o quadrado sem distorcer */
 }

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -11,37 +12,35 @@ body {
         "menu-lateral conteudo-main"
         "rodape rodape";
     grid-template-columns: 120px 1fr;
-    grid-template-rows: 100px 1fr 80px;
+    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     background-color: #f0e0c0;
 }
 
 .cabecalho {
     grid-area: cabecalho;
-    height: 100px;
+    min-height: 120px;
     background-color: #FFD280;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;    /* centraliza a logo-page horizontalmente */
     align-items: center;
-    padding-left: 160px;
 }
 
 .logo-page {
-    grid-area: cabecalho;
     width: 300px;
     height: 40px;
     background-color: black;
-    justify-content:center;
 }
 
 .menu-lateral {
     grid-area: menu-lateral;
     width: 120px;
     background-color: #7DB6CF;
-    display: flex;
     margin-left: 15%;
-    border-radius: 25px;
+    border-radius: 20px;
+    display: flex;
     flex-direction: column;
+    align-self: stretch;
     padding-top: 20px;
     gap: 5px;
     text-align: center;
@@ -51,29 +50,51 @@ body {
     width: 100px;
     height: 30px;
     background-color: #FF2FD2;
-    border-radius:0px 15px 15px 0px;
+    border-radius: 0px 15px 15px 0px;
     margin-top: 10px;
+    display: flex;              /* permite centralizar o texto dentro */
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-item a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; 
+    color: white;
+    font-size: 12px;
 }
 
 .conteudo-main {
     grid-area: conteudo-main;
-    flex: 1;
     background-color: #f0e0c0;
     padding: 30px;
 }
 
 .rodape {
     grid-area: rodape;
-    height: 120px;
+    min-height: 100px;
     background-color: #A47800;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding-left: 160px;
     gap: 40px;
+}
+
+.rodape-texto {
+    color: white;
+    font-size: 13px;
+}
+ 
+.rodape-creditos {
+    color: white;
+    font-size: 12px;
+}
+ 
+.rodape-creditos a {
+    color: #FFD280;             /* destaque nos nomes com a cor do cabeçalho */
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+.rodape-creditos a:hover {
+    text-decoration: underline;
 }
