@@ -55,12 +55,12 @@ padding-top: 4vh;
 }
 h1{
  font-family: Arial, Helvetica, sans-serif;
-font-size: clamp(20px, 2.5vw, 35px);
+font-size: clamp(20px, 2vw, 35px);
 }
 h1.nomeproduto{
 display: flex;
 padding: 4vh;
-font-size: clamp(23px, 3.3vw, 36px);
+font-size: clamp(23px, 3vw, 36px);
     text-align: justify;
      color: rgb(0, 61, 117);
 }
@@ -73,7 +73,7 @@ font-size: clamp(23px, 3.3vw, 36px);
 h2, ul li{
 font-weight: normal;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-font-size: clamp(17px, 2.2vw, 25px);
+font-size: clamp(17px, 1.5vw, 25px);
  padding: 2vh;
 
 }
@@ -125,7 +125,7 @@ font-size: clamp(17px, 2.2vw, 25px);
 }
 p{
     text-decoration: line-through;
-font-size: clamp(17px, 2.4vw, 23px);
+font-size: clamp(17px, 2vw, 23px);
 }
 
 .divisoria{
