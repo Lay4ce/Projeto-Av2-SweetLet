@@ -15,7 +15,7 @@
 }
 
 .imaproduto                              { grid-area: imagem; }
-.conteudo-main > h1.nomeproduto            { grid-area: nome; }
+.conteudo-main > h1.nomeproduto          { grid-area: nome; }
 .descricaoproduto                        { grid-area: descricao;}
 .detalhesproduto                         { grid-area: detalhes; }
 .compra                                  { grid-area: compra; }
@@ -25,8 +25,8 @@
     display: block;
     width:100%;
     height: fit-content;
-    padding: 5vh;
-    background-color: #ff3d98a1;
+ padding: clamp(10px, 3vh, 30px);
+     background-color: #ff3d98a1;
     border-style: none;
     border-radius: 6%;
     text-decoration: none;
@@ -45,6 +45,8 @@ text-align: center;
 img{
     height: 100%;
     width: 80%;
+    min-height: 170px;
+    min-width:410px;
 }
 .descricaoproduto{
     padding-bottom: 4vh;
@@ -52,12 +54,12 @@ padding-top: 4vh;
 }
 h1{
  font-family: Arial, Helvetica, sans-serif;
- font-size: 25px;
+font-size: clamp(20px, 2.7vw, 25px);
 }
 h1.nomeproduto{
 display: flex;
 padding: 4vh;
-    font-size: 33px;
+font-size: clamp(23px, 3.5vw, 33px);
     text-align: justify;
      color: rgb(0, 61, 117);
 }
@@ -70,7 +72,7 @@ padding: 4vh;
 h2, ul li{
 font-weight: normal;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
- font-size: 20px;
+font-size: clamp(17px, 2.5vw, 20px);
  padding: 2vh;
 
 }
@@ -112,15 +114,16 @@ font-weight: normal;
     overflow-y: hidden;
 }
 .caixaseuendereco{
-    margin: 2vw;
+    margin: 0 auto;
         max-width: 12vw;
-    max-height: 3vh;
+    max-height: 6vh;
     overflow-y: hidden ;
+    padding: 5px;
 
 }
 p{
     text-decoration: line-through;
-    font-size: 20px;
+font-size: clamp(17px, 2.5vw, 20px);
 }
 
 .divisoria{
@@ -142,4 +145,35 @@ color:rgb(0, 61, 117);
 
 .limao{
     color: #80b450;
+}
+.rodape-texto, .rodape-creditos{
+    text-decoration: none !important;
+}
+
+@media screen and (max-width: 900px){
+.conteudo-main {
+    display: grid;
+    grid-template-areas:
+        "imagem"
+        "nome"
+        "descricao "
+        "compra"
+        "modelos"
+        "detalhes";
+    grid-template-columns: 1fr;
+    gap: 3vw;
+}
+
+.caixaseuendereco{
+            max-width: 200px;
+    max-height: 6vh;
+}
+
+.botaocompra{
+    line-height: 200%;
+}
+
+
+
+
 }
