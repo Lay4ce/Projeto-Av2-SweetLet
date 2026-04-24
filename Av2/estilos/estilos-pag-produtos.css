@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
   }
-  .conteudo-main main {
+  .conteudo-main {
     width: 100%;
 }
 .titulo{
@@ -23,12 +23,10 @@ padding-top: 5%;
 }
 img.imagens{
     display: block;
-    width: 80%;
+    width: 70%;
     height: auto;
     min-width: 40px;
-    min-height: 40px;
     max-width: 30vw;
-    max-height: 30vh;
     margin: 0 auto;
 }
 
@@ -43,11 +41,12 @@ text-align: center;
 }
 h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-font-size: clamp(15px, 2vw, 30px);
+font-size: clamp(15px, 1.8vw, 25px);
 
 }
 h2{
         font-family:Verdana, Geneva, Tahoma, sans-serif;
-font-size: clamp(12px, 1.5vw, 25px);
+font-size: clamp(12px, 1.5vw, 20px);
 padding-top: 3vh;
 }
+
