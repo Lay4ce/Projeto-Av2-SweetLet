@@ -1,4 +1,4 @@
-/* folha de estilo específica para as duas paginas de descricao e venda(produto1.html e produto2.html) */
+/* folha de estilo específica para as duas paginas de descricao e venda(compra1.html e compra2.html) */
 
 *{
     box-sizing: border-box;
@@ -51,7 +51,6 @@ img.imagem{
     height: 100%;
     width: 80%;
     min-height: 170px;
-    min-width:410px;
 }
 .descricaoproduto{
     padding-bottom: 4vh;
