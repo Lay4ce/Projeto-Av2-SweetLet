@@ -1,17 +1,22 @@
+/* folha de estilo específica para a pagina de todos os produtos (produtos.html) */
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-  .conteudo-main main {
+  .conteudo-main {
     width: 100%;
 }
+/* cabeçalho da página de produtos */
 .titulo{
         width: 100%;
         height: fit-content ;
         padding: 4%;
     background-color: beige;
 }
+
+/* Cards dos produtos que se ajustam na tela*/
 .produtos{
     display: flex;
 width: 100%;
@@ -23,15 +28,13 @@ padding-top: 5%;
 }
 img.imagens{
     display: block;
-    width: 80%;
+    width: 70%;
     height: auto;
     min-width: 40px;
-    min-height: 40px;
     max-width: 30vw;
-    max-height: 30vh;
     margin: 0 auto;
 }
-
+/* cards*/
 .item1, .item2, .item3, .item4{
 display: flex;
 padding: 3vw;
@@ -43,11 +46,12 @@ text-align: center;
 }
 h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-font-size: clamp(15px, 2vw, 30px);
+font-size: clamp(15px, 1.8vw, 25px);
 
 }
 h2{
         font-family:Verdana, Geneva, Tahoma, sans-serif;
-font-size: clamp(12px, 1.5vw, 25px);
+font-size: clamp(12px, 1.5vw, 20px);
 padding-top: 3vh;
 }
+

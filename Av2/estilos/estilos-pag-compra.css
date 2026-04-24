@@ -1,7 +1,10 @@
+/* folha de estilo específica para as duas paginas de descricao e venda(produto1.html e produto2.html) */
+
 *{
     box-sizing: border-box;
     margin: 0;
   }
+  /* grid principal da página de produto */
 .conteudo-main {
     display: grid;
     grid-template-areas:
@@ -69,6 +72,7 @@ font-size: clamp(20px, 3vw, 30px);
         font-family:Verdana, Geneva, Tahoma, sans-serif;
  padding: 2vh;
  margin: 2% auto;
+  padding-bottom: 0.5vh;
  }
 
 h2, ul li{
@@ -76,8 +80,10 @@ font-weight: normal;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 font-size: clamp(15px, 1.5vw, 20px);
  padding: 2vh;
+  padding-bottom: 0.5vh;
 
 }
+/* box lateral de compra */
 .compra{
     height: fit-content;
     width: 100%;
@@ -88,7 +94,7 @@ font-size: clamp(15px, 1.5vw, 20px);
     padding: 2vw;
         color: rgb(0, 61, 117);
             flex-direction: column;
-            align-items:center 
+            align-items:center;
 
 }
 .compra h2{
@@ -102,6 +108,8 @@ font-size: clamp(15px, 1.5vw, 20px);
     position: relative;
     margin-bottom: 3%;
 }
+
+/* campos de simulação */
 .caixaseuendereco, .caixaquantidade{
     display: block;
     border: 1px solid rgb(0, 61, 117);
@@ -125,11 +133,12 @@ font-size: clamp(15px, 1.5vw, 20px);
     padding: 5px;
 
 }
+/* preço antigo riscado */
 p{
     text-decoration: line-through;
 font-size: clamp(14px, 2vw, 18px);
 }
-
+/* divisórias decorativas entre os modelos */
 .divisoria{
     width: 100%;
 text-align: center;
@@ -159,6 +168,7 @@ color:rgb(0, 61, 117);
 .balalimao{
     color: #a9b019;
 }
+/* corrige o line-through global do <p> no rodapé */
 .rodape-texto, .rodape-creditos{
     text-decoration: none !important;
 }
@@ -202,6 +212,7 @@ color:rgb(0, 61, 117);
     font-size: 18px;
 }
 
+/* responsividade — muda para uma coluna única em telas 900px ou menores */
 @media screen and (max-width: 900px){
 .conteudo-main {
     display: grid;
