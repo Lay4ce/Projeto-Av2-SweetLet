@@ -22,6 +22,7 @@
 .compra                                  { grid-area: compra; ;}
 .modelos                                 { grid-area: modelos; }
 
+
 .botaocompra a{
     display: block;
     width:100%;
@@ -162,6 +163,45 @@ color:rgb(0, 61, 117);
     text-decoration: none !important;
 }
 
+/* Estrutura de estilização da paginação */
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 40px 0 20px 0;
+}
+
+.paginacao a {
+    text-decoration: none;
+    color: rgb(0, 61, 117);
+    font-size: 16px;
+    width: 35px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25%;
+    border: 1px solid rgb(0, 61, 117);
+    transition: background-color 0.2s;
+}
+
+.paginacao a:hover {
+    background-color: #FFD280;
+}
+
+.paginacao .pagina-ativa {
+    background-color: #A47800;
+    color: white;
+}
+
+.paginacao .pagina-proxima,
+.paginacao .pagina-anterior {
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 900px){
 .conteudo-main {
     display: grid;
@@ -184,6 +224,5 @@ color:rgb(0, 61, 117);
 .botaocompra{
     line-height: 200%;
 }
-
 
 }
